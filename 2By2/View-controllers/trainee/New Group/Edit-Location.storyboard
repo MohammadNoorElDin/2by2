@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aQ9-xL-RMX">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Edit Session Location-->
+        <scene sceneID="F1i-Sv-Rm9">
+            <objects>
+                <viewController id="1MR-9Z-Jbp" customClass="editLocation" customModule="_by2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R5M-Ws-MNz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-o0-pL0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-vj-iAB" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-A6-wCc" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="146.5" y="812" width="121" height="35"/>
+                                <color key="backgroundColor" red="0.66274509800000003" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backPressed:" destination="1MR-9Z-Jbp" eventType="touchUpInside" id="8FD-rM-ouZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="unB-Ug-9DR">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cuf-Wq-JLL"/>
+                                    <constraint firstAttribute="width" constant="60" id="iVu-hc-Gal"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGE-dh-edB" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="24" y="752" width="366" height="50"/>
+                                <color key="backgroundColor" red="0.66274509800000003" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f9x-9K-pHN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
+                                <state key="normal" title="Confirm Your Session Location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmCliked:" destination="1MR-9Z-Jbp" eventType="touchUpInside" id="JOY-nB-y14"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-5X-yzx" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="362" y="100" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.75444135270000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VWA-Hb-miy"/>
+                                    <constraint firstAttribute="width" constant="40" id="fdo-uQ-61U"/>
+                                </constraints>
+                                <state key="normal" image="mark_iconfinder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getMyLocationPressed:" destination="1MR-9Z-Jbp" eventType="touchUpInside" id="4kd-M5-fFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-KV-ynD" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="12" y="100" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="mVG-gP-XSC"/>
+                                    <constraint firstAttribute="height" constant="40" id="u0X-1c-Ba8"/>
+                                </constraints>
+                                <state key="normal" image="search"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchByLocationName:" destination="1MR-9Z-Jbp" eventType="touchUpInside" id="d31-r1-MB0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lnv-A6-wCc" firstAttribute="top" secondItem="qGE-dh-edB" secondAttribute="bottom" constant="10" id="1Zo-qF-xla"/>
+                            <constraint firstItem="zhc-5X-yzx" firstAttribute="top" secondItem="CH0-Ob-Ogi" secondAttribute="top" constant="12" id="66f-9v-zVJ"/>
+                            <constraint firstItem="h1T-o0-pL0" firstAttribute="top" secondItem="R5M-Ws-MNz" secondAttribute="top" id="7k6-YW-waY"/>
+                            <constraint firstItem="lnv-A6-wCc" firstAttribute="centerX" secondItem="CH0-Ob-Ogi" secondAttribute="centerX" id="90y-Vp-Pxd"/>
+                            <constraint firstItem="AWc-KV-ynD" firstAttribute="top" secondItem="CH0-Ob-Ogi" secondAttribute="top" constant="12" id="A38-ZX-qf8"/>
+                            <constraint firstItem="h1T-o0-pL0" firstAttribute="leading" secondItem="CH0-Ob-Ogi" secondAttribute="leading" id="Bvk-bl-y30"/>
+                            <constraint firstItem="unB-Ug-9DR" firstAttribute="centerX" secondItem="R5M-Ws-MNz" secondAttribute="centerX" id="EPJ-4h-ezc"/>
+                            <constraint firstItem="qGE-dh-edB" firstAttribute="leading" secondItem="CH0-Ob-Ogi" secondAttribute="leading" constant="24" id="ET9-Ew-0YD"/>
+                            <constraint firstItem="CH0-Ob-Ogi" firstAttribute="bottom" secondItem="WWC-vj-iAB" secondAttribute="bottom" id="GrL-xf-nIL"/>
+                            <constraint firstItem="CH0-Ob-Ogi" firstAttribute="trailing" secondItem="qGE-dh-edB" secondAttribute="trailing" constant="24" id="H0b-gW-bJc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lnv-A6-wCc" secondAttribute="bottom" constant="21" id="HSb-xO-mDI"/>
+                            <constraint firstItem="unB-Ug-9DR" firstAttribute="centerY" secondItem="R5M-Ws-MNz" secondAttribute="centerY" id="IEO-cg-M5M"/>
+                            <constraint firstItem="WWC-vj-iAB" firstAttribute="top" secondItem="CH0-Ob-Ogi" secondAttribute="top" id="JEx-D8-oSA"/>
+                            <constraint firstItem="WWC-vj-iAB" firstAttribute="leading" secondItem="CH0-Ob-Ogi" secondAttribute="leading" id="Y89-Mg-AqJ"/>
+                            <constraint firstItem="h1T-o0-pL0" firstAttribute="trailing" secondItem="CH0-Ob-Ogi" secondAttribute="trailing" id="aaI-p0-ikH"/>
+                            <constraint firstItem="CH0-Ob-Ogi" firstAttribute="trailing" secondItem="zhc-5X-yzx" secondAttribute="trailing" constant="12" id="bfP-Ga-okO"/>
+                            <constraint firstItem="h1T-o0-pL0" firstAttribute="bottom" secondItem="CH0-Ob-Ogi" secondAttribute="bottom" id="cfv-Et-OkR"/>
+                            <constraint firstItem="CH0-Ob-Ogi" firstAttribute="bottom" secondItem="qGE-dh-edB" secondAttribute="bottom" constant="60" id="jxF-d3-avw"/>
+                            <constraint firstItem="CH0-Ob-Ogi" firstAttribute="trailing" secondItem="WWC-vj-iAB" secondAttribute="trailing" id="rAp-fp-r1b"/>
+                            <constraint firstItem="AWc-KV-ynD" firstAttribute="leading" secondItem="CH0-Ob-Ogi" secondAttribute="leading" constant="12" id="xgv-uw-fGv"/>
+                            <constraint firstItem="lnv-A6-wCc" firstAttribute="width" secondItem="qGE-dh-edB" secondAttribute="width" multiplier="0.33" id="znx-2G-GcM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CH0-Ob-Ogi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Session Location" id="VRS-Wi-Yg6">
+                        <barButtonItem key="rightBarButtonItem" image="logo" id="Lyi-6f-sSd">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-16" maxY="0.0"/>
+                            <color key="tintColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="googleMapsView" destination="WWC-vj-iAB" id="BAw-VU-AA4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jP-dr-ZHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.6666666666667" y="-2275.4464285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IHX-U2-Jb7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQ9-xL-RMX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" backIndicatorImage="backarrow" backIndicatorTransitionMaskImage="backarrow" id="nc7-yn-fKh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1MR-9Z-Jbp" kind="relationship" relationship="rootViewController" id="kCj-1d-XOt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mB-8J-c85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="-2274.7767857142858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="1080" height="1920"/>
+        <image name="backarrow" width="24" height="24"/>
+        <image name="logo" width="57" height="64"/>
+        <image name="mark_iconfinder" width="24" height="24"/>
+        <image name="pin" width="135" height="240"/>
+        <image name="search" width="24" height="24"/>
+    </resources>
+</document>

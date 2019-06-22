@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PackageTableViewCell" id="KGk-i7-Jjw" customClass="PackageTableViewCell" customModule="trainee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-Ee-afe">
+                        <rect key="frame" x="4" y="4" width="22" height="35.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Br9-jI-ayT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DT2-YF-0Cr" customClass="CustomDesignableTextField" customModule="trainee" customModuleProvider="target">
+                        <rect key="frame" x="34" y="8" width="129" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="p0y-ow-ypb"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderBottom">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Phone" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afS-H2-ztX" customClass="CustomDesignableTextField" customModule="trainee" customModuleProvider="target">
+                        <rect key="frame" x="175" y="8" width="129" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="PMB-Bk-nfy"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderBottom">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iKA-Ee-afe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="3ZY-Yi-KwM"/>
+                    <constraint firstItem="DT2-YF-0Cr" firstAttribute="leading" secondItem="iKA-Ee-afe" secondAttribute="trailing" constant="8" id="DrR-7z-01H"/>
+                    <constraint firstItem="afS-H2-ztX" firstAttribute="height" secondItem="DT2-YF-0Cr" secondAttribute="height" id="EY0-3u-hdr"/>
+                    <constraint firstAttribute="trailing" secondItem="afS-H2-ztX" secondAttribute="trailing" constant="16" id="QHA-bQ-85I"/>
+                    <constraint firstItem="afS-H2-ztX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Va8-Xf-8aC"/>
+                    <constraint firstItem="afS-H2-ztX" firstAttribute="width" secondItem="DT2-YF-0Cr" secondAttribute="width" id="Vq7-Uq-9or"/>
+                    <constraint firstItem="iKA-Ee-afe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="fqf-WM-9ZO"/>
+                    <constraint firstItem="DT2-YF-0Cr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g3t-Fo-aXX"/>
+                    <constraint firstAttribute="bottom" secondItem="iKA-Ee-afe" secondAttribute="bottom" constant="4" id="m5t-cz-u1M"/>
+                    <constraint firstItem="afS-H2-ztX" firstAttribute="leading" secondItem="DT2-YF-0Cr" secondAttribute="trailing" constant="12" id="pJt-Ul-B0x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dataIndex" destination="iKA-Ee-afe" id="Etg-89-6G9"/>
+                <outlet property="nameTF" destination="DT2-YF-0Cr" id="uqs-fx-WgB"/>
+                <outlet property="phoneTF" destination="afS-H2-ztX" id="FLA-jz-ule"/>
+            </connections>
+            <point key="canvasLocation" x="-152" y="115.14242878560721"/>
+        </tableViewCell>
+    </objects>
+</document>

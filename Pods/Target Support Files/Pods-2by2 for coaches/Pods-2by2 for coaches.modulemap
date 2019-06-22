@@ -1,0 +1,6 @@
+framework module Pods_2by2_for_coaches {
+  umbrella header "Pods-2by2 for coaches-umbrella.h"
+
+  export *
+  module * { export * }
+}

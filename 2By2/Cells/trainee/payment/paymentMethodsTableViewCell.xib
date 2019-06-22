@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentMethodsTableViewCell" id="KGk-i7-Jjw" customClass="paymentMethodsTableViewCell" customModule="trainee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZt-AB-S2x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eV-Ji-GT2">
+                                <rect key="frame" x="12" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="gxR-y8-cpt"/>
+                                    <constraint firstAttribute="height" constant="20" id="iJB-SA-fet"/>
+                                </constraints>
+                                <state key="normal" image="radio-off-button"/>
+                                <connections>
+                                    <action selector="creditRadioBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JPe-SE-lHI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="master_card" translatesAutoresizingMaskIntoConstraints="NO" id="Jtb-KA-HAk">
+                                <rect key="frame" x="40" y="7" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DVN-3m-kmK"/>
+                                    <constraint firstAttribute="width" constant="60" id="Duf-Hv-YF3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx-xxxx-xxxx-2198" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIR-oN-UQ5">
+                                <rect key="frame" x="106" y="14.5" width="202" height="15"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="15"/>
+                                <color key="textColor" red="0.67450980390000004" green="0.094117647060000004" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-6Z-4UQ">
+                                <rect key="frame" x="284" y="10" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1g2-ZA-CoX"/>
+                                    <constraint firstAttribute="width" constant="24" id="xde-ED-jbS"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="deleteRadioBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oGu-zj-nFf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yIR-oN-UQ5" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="4yD-dT-1e2"/>
+                            <constraint firstItem="8eV-Ji-GT2" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="78p-Dw-ijn"/>
+                            <constraint firstItem="yIR-oN-UQ5" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="F4g-fU-ydx"/>
+                            <constraint firstItem="8eV-Ji-GT2" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="Hlh-La-oeL"/>
+                            <constraint firstItem="Jtb-KA-HAk" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="JBG-6Y-9qf"/>
+                            <constraint firstItem="Jtb-KA-HAk" firstAttribute="leading" secondItem="8eV-Ji-GT2" secondAttribute="trailing" constant="8" id="dLi-nQ-fYJ"/>
+                            <constraint firstItem="yIR-oN-UQ5" firstAttribute="leading" secondItem="Jtb-KA-HAk" secondAttribute="trailing" constant="6" id="ebx-BN-mvQ"/>
+                            <constraint firstItem="8eV-Ji-GT2" firstAttribute="leading" secondItem="VZt-AB-S2x" secondAttribute="leading" constant="12" id="hh5-kn-LTZ"/>
+                            <constraint firstItem="Mpu-6Z-4UQ" firstAttribute="centerY" secondItem="VZt-AB-S2x" secondAttribute="centerY" id="kk5-Vf-Y6I"/>
+                            <constraint firstAttribute="trailing" secondItem="Mpu-6Z-4UQ" secondAttribute="trailing" constant="12" id="skE-nh-M8p"/>
+                            <constraint firstAttribute="trailing" secondItem="yIR-oN-UQ5" secondAttribute="trailing" constant="12" id="vpr-8e-ikV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VZt-AB-S2x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EUj-i5-7Mj"/>
+                    <constraint firstAttribute="trailing" secondItem="VZt-AB-S2x" secondAttribute="trailing" id="OZY-0f-cOA"/>
+                    <constraint firstItem="VZt-AB-S2x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VCx-Od-fp1"/>
+                    <constraint firstAttribute="bottom" secondItem="VZt-AB-S2x" secondAttribute="bottom" id="vuH-fF-g50"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardNumber" destination="yIR-oN-UQ5" id="0mX-pj-gKv"/>
+                <outlet property="radioButton" destination="8eV-Ji-GT2" id="yQO-fI-xAm"/>
+                <outlet property="visaImage" destination="Jtb-KA-HAk" id="wQ8-AU-ejE"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="147.52623688155924"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="24" height="24"/>
+        <image name="master_card" width="512" height="320"/>
+        <image name="radio-off-button" width="16" height="16"/>
+    </resources>
+</document>

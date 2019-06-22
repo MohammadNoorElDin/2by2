@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa-Light.otf">
+            <string>NexaLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleTableViewCell" rowHeight="94" id="KGk-i7-Jjw" customClass="scheduleTableViewCell" customModule="_by2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sys-Nu-kIN">
+                        <rect key="frame" x="12" y="12" width="212" height="69.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MeFit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b51-bg-l3v">
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="14.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mahmoud Abdallah " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-NM-VBh">
+                                <rect key="frame" x="0.0" y="18.5" width="212" height="14.5"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-xd-iSK">
+                                <rect key="frame" x="0.0" y="37" width="212" height="14"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Avaliable Sessions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9i-55-jDr">
+                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esr-IS-rRc">
+                                        <rect key="frame" x="131.5" y="0.0" width="80.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzz-Tl-dM8">
+                                <rect key="frame" x="0.0" y="55" width="212" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Expiry Date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aji-2y-nKc">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
+                                        <color key="textColor" red="0.63921568630000003" green="0.1843137255" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text=" 18-10-2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXa-yn-cds">
+                                        <rect key="frame" x="89" y="0.0" width="123" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
+                                        <color key="textColor" red="0.63921568630000003" green="0.1843137255" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZL-5Q-E65" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                        <rect key="frame" x="232" y="8" width="80" height="32"/>
+                        <color key="backgroundColor" red="0.66274509800000003" green="0.098039215690000001" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Js5-bR-rF7"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="Q0S-ns-A1g"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="32" id="d5S-Yc-0v4"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="tpM-51-ksU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="13"/>
+                        <state key="normal" title="Schedule">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="schdule:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8J6-JE-Og2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sys-Nu-kIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="3wS-ew-Ipk"/>
+                    <constraint firstAttribute="trailing" secondItem="mZL-5Q-E65" secondAttribute="trailing" constant="8" id="5ea-jw-03E"/>
+                    <constraint firstItem="sys-Nu-kIN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Mmk-pc-AMV"/>
+                    <constraint firstItem="mZL-5Q-E65" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="S1z-AI-tyT"/>
+                    <constraint firstItem="mZL-5Q-E65" firstAttribute="leading" secondItem="sys-Nu-kIN" secondAttribute="trailing" constant="8" id="VdO-oE-rIZ"/>
+                    <constraint firstAttribute="bottom" secondItem="sys-Nu-kIN" secondAttribute="bottom" constant="12" id="dI7-0s-ppt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avaliableSessions" destination="Esr-IS-rRc" id="Pjg-x4-gZ4"/>
+                <outlet property="coachName" destination="kfa-NM-VBh" id="veR-Bd-ylG"/>
+                <outlet property="expiryDate" destination="XXa-yn-cds" id="wz7-Xa-jp8"/>
+                <outlet property="packageName" destination="b51-bg-l3v" id="zgp-hr-W74"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="170.01499250374815"/>
+        </tableViewCell>
+    </objects>
+</document>

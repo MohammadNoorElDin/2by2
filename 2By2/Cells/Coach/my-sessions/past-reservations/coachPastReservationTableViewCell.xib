@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa-Light.otf">
+            <string>NexaLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coachPastReservationTableViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="coachPastReservationTableViewCell" customModule="_by2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-pic-size" translatesAutoresizingMaskIntoConstraints="NO" id="37f-rr-TLc" customClass="customDesignableIMage" customModule="_by2" customModuleProvider="target">
+                        <rect key="frame" x="12" y="12" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="JmC-4g-J04"/>
+                            <constraint firstAttribute="width" constant="75" id="hrh-wk-091"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                <real key="value" value="37.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OBP-cg-3g9" userLabel="infos">
+                        <rect key="frame" x="95" y="12" width="135" height="74.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ahmed Aly " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGQ-PZ-wD0">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="13.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mefit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyR-n3-fJ9">
+                                <rect key="frame" x="0.0" y="15.5" width="135" height="13"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnK-so-SQD">
+                                <rect key="frame" x="0.0" y="30.5" width="135" height="13.5"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/10/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f4-Jy-PFz">
+                                <rect key="frame" x="0.0" y="46" width="135" height="13"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-c6-aeR">
+                                <rect key="frame" x="0.0" y="61" width="135" height="13.5"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kbr-NK-eoS" userLabel="buttons">
+                        <rect key="frame" x="238" y="17" width="70" height="65"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdr-qp-Wsw" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="13"/>
+                                <state key="normal" title="Details">
+                                    <color key="titleColor" red="0.63921568630000003" green="0.1843137255" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="details:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9qb-E5-y0s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTj-tn-1CY" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="35.5" width="70" height="29.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="13"/>
+                                <state key="normal" title="Rate">
+                                    <color key="titleColor" red="0.63921568630000003" green="0.1843137255" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rate:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vc1-ik-alP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="SSx-aX-j8c"/>
+                            <constraint firstAttribute="width" constant="70" id="esZ-ol-hbt"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kbr-NK-eoS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CzZ-Q6-fim"/>
+                    <constraint firstAttribute="bottom" secondItem="OBP-cg-3g9" secondAttribute="bottom" constant="12" id="Szb-FY-D6K"/>
+                    <constraint firstItem="37f-rr-TLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="hmZ-Vn-6Zl"/>
+                    <constraint firstAttribute="trailing" secondItem="kbr-NK-eoS" secondAttribute="trailing" constant="12" id="kdP-I2-xhn"/>
+                    <constraint firstItem="OBP-cg-3g9" firstAttribute="leading" secondItem="37f-rr-TLc" secondAttribute="trailing" constant="8" id="p7f-HF-oCk"/>
+                    <constraint firstItem="OBP-cg-3g9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="t9T-Ae-WEX"/>
+                    <constraint firstItem="kbr-NK-eoS" firstAttribute="leading" secondItem="OBP-cg-3g9" secondAttribute="trailing" constant="8" id="wUZ-7e-Me2"/>
+                    <constraint firstItem="37f-rr-TLc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xPG-rK-jxh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coachDate" destination="8f4-Jy-PFz" id="gUP-M7-rZh"/>
+                <outlet property="coachDesc" destination="YnK-so-SQD" id="bgf-ab-f81"/>
+                <outlet property="coachImage" destination="37f-rr-TLc" id="2uy-1c-OJp"/>
+                <outlet property="coachName" destination="cGQ-PZ-wD0" id="snt-zL-0uh"/>
+                <outlet property="coachPackage" destination="kyR-n3-fJ9" id="kaH-rG-c6m"/>
+                <outlet property="coachTime" destination="8ub-c6-aeR" id="4Fz-vS-6xl"/>
+                <outlet property="detailsBtn" destination="qdr-qp-Wsw" id="xlr-51-YfW"/>
+                <outlet property="rateBtn" destination="yTj-tn-1CY" id="aYK-oy-ozT"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="170.46476761619192"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile-pic-size" width="300" height="304"/>
+    </resources>
+</document>

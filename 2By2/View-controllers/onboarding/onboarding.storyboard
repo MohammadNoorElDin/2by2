@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ikw-RC-ii7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="uoX-lS-sC4">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ikw-RC-ii7" customClass="onboardingPageViewController" customModule="_by2" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IxR-pL-K3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="107"/>
+        </scene>
+        <!--First Onboarding View Controller-->
+        <scene sceneID="AQr-IL-JsX">
+            <objects>
+                <viewController restorationIdentifier="firstOnboardingVC" storyboardIdentifier="firstOnboardingVC" id="uJA-mu-xbz" customClass="firstOnboardingViewController" customModule="_by2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="PlD-vT-HCa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="champ1" translatesAutoresizingMaskIntoConstraints="NO" id="Kit-JA-UrN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-Ef-62o">
+                                <rect key="frame" x="287" y="26" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Hb-qk-f0o"/>
+                                    <constraint firstAttribute="width" constant="72" id="lLk-1x-DW1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipClicked:" destination="uJA-mu-xbz" eventType="touchUpInside" id="m50-aH-zaY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67450980390000004" green="0.094117647060000004" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xMN-Ef-62o" firstAttribute="top" secondItem="HQU-v4-Cgv" secondAttribute="top" constant="6" id="2Lt-Eh-xRV"/>
+                            <constraint firstItem="Kit-JA-UrN" firstAttribute="trailing" secondItem="HQU-v4-Cgv" secondAttribute="trailing" id="UFZ-g2-Wmc"/>
+                            <constraint firstItem="Kit-JA-UrN" firstAttribute="bottom" secondItem="HQU-v4-Cgv" secondAttribute="bottom" id="Zlt-Fn-vwX"/>
+                            <constraint firstItem="Kit-JA-UrN" firstAttribute="top" secondItem="PlD-vT-HCa" secondAttribute="top" id="diX-t1-8yf"/>
+                            <constraint firstItem="Kit-JA-UrN" firstAttribute="leading" secondItem="HQU-v4-Cgv" secondAttribute="leading" id="opA-VV-HQR"/>
+                            <constraint firstItem="HQU-v4-Cgv" firstAttribute="trailing" secondItem="xMN-Ef-62o" secondAttribute="trailing" constant="16" id="xaT-QN-XyC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HQU-v4-Cgv"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Kit-JA-UrN" id="73z-sG-jJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55p-XK-Iyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583.20000000000005" y="98.50074962518741"/>
+        </scene>
+        <!--First Onboarding View Controller-->
+        <scene sceneID="TfZ-XF-66v">
+            <objects>
+                <viewController restorationIdentifier="secondOnboardingVC" storyboardIdentifier="secondOnboardingVC" id="3wT-jI-1FN" customClass="firstOnboardingViewController" customModule="_by2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="BjC-XN-9wR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw7-p3-DaT">
+                                <rect key="frame" x="287" y="48" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="champ2" translatesAutoresizingMaskIntoConstraints="NO" id="Iue-64-NnM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejR-xo-2To">
+                                <rect key="frame" x="287" y="26" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NOR-Ny-37k"/>
+                                    <constraint firstAttribute="width" constant="72" id="SnR-Or-aB4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipClicked:" destination="3wT-jI-1FN" eventType="touchUpInside" id="37W-G3-x3H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ejR-xo-2To" firstAttribute="top" secondItem="RLt-yu-VZw" secondAttribute="top" constant="6" id="80h-IC-wvC"/>
+                            <constraint firstItem="RLt-yu-VZw" firstAttribute="trailing" secondItem="ejR-xo-2To" secondAttribute="trailing" constant="16" id="Jfi-mP-U9p"/>
+                            <constraint firstItem="Iue-64-NnM" firstAttribute="top" secondItem="BjC-XN-9wR" secondAttribute="top" id="V2Z-oc-x6f"/>
+                            <constraint firstItem="Iue-64-NnM" firstAttribute="trailing" secondItem="RLt-yu-VZw" secondAttribute="trailing" id="ewY-Rc-OLg"/>
+                            <constraint firstItem="Iue-64-NnM" firstAttribute="leading" secondItem="RLt-yu-VZw" secondAttribute="leading" id="gdJ-Bb-nEf"/>
+                            <constraint firstItem="Iue-64-NnM" firstAttribute="bottom" secondItem="RLt-yu-VZw" secondAttribute="bottom" id="mLK-xg-1ss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RLt-yu-VZw"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Iue-64-NnM" id="6u5-n4-L5G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opz-DG-qNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="99"/>
+        </scene>
+        <!--First Onboarding View Controller-->
+        <scene sceneID="Jfd-Ro-LZ7">
+            <objects>
+                <viewController restorationIdentifier="thirdOnboardingVC" storyboardIdentifier="thirdOnboardingVC" id="qob-tT-gfT" customClass="firstOnboardingViewController" customModule="_by2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="3" contentMode="scaleToFill" id="qkL-2H-L8O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="champ3" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-2p-Wja">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwm-rk-WAc">
+                                <rect key="frame" x="287" y="26" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zho-rZ-SAD"/>
+                                    <constraint firstAttribute="width" constant="72" id="npg-K3-Nj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipClicked:" destination="qob-tT-gfT" eventType="touchUpInside" id="unw-n8-Zcm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AAv-2p-Wja" firstAttribute="bottom" secondItem="BnR-17-AIz" secondAttribute="bottom" id="B01-nU-pQd"/>
+                            <constraint firstItem="AAv-2p-Wja" firstAttribute="trailing" secondItem="BnR-17-AIz" secondAttribute="trailing" id="Mtf-XI-4TB"/>
+                            <constraint firstItem="Wwm-rk-WAc" firstAttribute="top" secondItem="BnR-17-AIz" secondAttribute="top" constant="6" id="oiI-9s-lUE"/>
+                            <constraint firstItem="BnR-17-AIz" firstAttribute="trailing" secondItem="Wwm-rk-WAc" secondAttribute="trailing" constant="16" id="uvC-w7-Ibh"/>
+                            <constraint firstItem="AAv-2p-Wja" firstAttribute="top" secondItem="qkL-2H-L8O" secondAttribute="top" id="xRH-Jb-VIp"/>
+                            <constraint firstItem="AAv-2p-Wja" firstAttribute="leading" secondItem="BnR-17-AIz" secondAttribute="leading" id="xjE-tf-A8S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BnR-17-AIz"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="AAv-2p-Wja" id="bcg-cI-lAC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyf-V8-8te" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="98.50074962518741"/>
+        </scene>
+        <!--Fourth Onboarding View Controller-->
+        <scene sceneID="NDv-s7-WA5">
+            <objects>
+                <viewController restorationIdentifier="fourthOnboardingVC" storyboardIdentifier="fourthOnboardingVC" id="paW-nV-Rfn" customClass="fourthOnboardingViewController" customModule="_by2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDJ-tB-xaG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="champ4" translatesAutoresizingMaskIntoConstraints="NO" id="4aP-cO-tKv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAq-0y-0B3" customClass="CustomDesignableButton" customModule="_by2" customModuleProvider="target">
+                                <rect key="frame" x="138" y="584" width="99" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.63921568630000003" green="0.1843137255" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getStarted:" destination="paW-nV-Rfn" eventType="touchUpInside" id="C8m-Ua-YUo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4aP-cO-tKv" firstAttribute="top" secondItem="jDJ-tB-xaG" secondAttribute="top" id="Gds-zA-ru7"/>
+                            <constraint firstItem="4aP-cO-tKv" firstAttribute="bottom" secondItem="nZ1-VE-q2l" secondAttribute="bottom" id="Ofh-t3-HzB"/>
+                            <constraint firstItem="4aP-cO-tKv" firstAttribute="leading" secondItem="nZ1-VE-q2l" secondAttribute="leading" id="VMA-Yg-pcg"/>
+                            <constraint firstItem="4aP-cO-tKv" firstAttribute="trailing" secondItem="nZ1-VE-q2l" secondAttribute="trailing" id="b2r-b7-POB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nZ1-VE-q2l"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="4aP-cO-tKv" id="dMz-BV-bgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ce4-ed-PmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="94.902548725637189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="champ1" width="1080" height="1920"/>
+        <image name="champ2" width="1080" height="1920"/>
+        <image name="champ3" width="1080" height="1920"/>
+        <image name="champ4" width="1080" height="1920"/>
+    </resources>
+</document>

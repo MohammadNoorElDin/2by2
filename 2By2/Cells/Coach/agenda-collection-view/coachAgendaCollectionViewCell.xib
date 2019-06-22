@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa-Light.otf">
+            <string>NexaLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" contentMode="scaleToFill" reuseIdentifier="coachAgendaCollectionViewCell" id="gTV-IL-0wX" customClass="coachAgendaCollectionViewCell" customModule="_by2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEt-dg-jB7" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1zO-bj-nBj">
+                                <rect key="frame" x="20" y="8" width="35.5" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyU-qq-rwg">
+                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-Hj-2vS">
+                                        <rect key="frame" x="0.0" y="17" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1zO-bj-nBj" firstAttribute="top" secondItem="NEt-dg-jB7" secondAttribute="top" constant="8" id="VaO-Hq-jbg"/>
+                            <constraint firstItem="1zO-bj-nBj" firstAttribute="centerX" secondItem="NEt-dg-jB7" secondAttribute="centerX" id="fgr-jm-Xr2"/>
+                            <constraint firstAttribute="bottom" secondItem="1zO-bj-nBj" secondAttribute="bottom" constant="8" id="v04-K6-Zxe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NEt-dg-jB7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3d3-MY-Yqs"/>
+                <constraint firstItem="NEt-dg-jB7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IHp-8T-XRX"/>
+                <constraint firstAttribute="bottom" secondItem="NEt-dg-jB7" secondAttribute="bottom" id="qGO-dg-YXW"/>
+                <constraint firstAttribute="trailing" secondItem="NEt-dg-jB7" secondAttribute="trailing" id="zSz-QY-xIR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="75" height="50"/>
+            <connections>
+                <outlet property="dateLabel" destination="pW4-Hj-2vS" id="fn2-DX-0t0"/>
+                <outlet property="nameLabel" destination="uyU-qq-rwg" id="d6p-4h-EIU"/>
+            </connections>
+            <point key="canvasLocation" x="157.59999999999999" y="147.52623688155924"/>
+        </collectionViewCell>
+    </objects>
+</document>

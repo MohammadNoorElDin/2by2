@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa-Light.otf">
+            <string>NexaLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" id="gTV-IL-0wX" customClass="ContentCollectionViewCell" customModule="_By2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-Fl-AwB">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border-bottom-right" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOV-di-7Ob">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="61"/>
+                            </imageView>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-iP-VcC">
+                                <rect key="frame" x="12" y="12" width="79" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-3q-S77">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="37"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="15"/>
+                                        <state key="normal" title="Wed">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aPW-AM-49h"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPO-Gb-MfE">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6L1-iP-VcC" firstAttribute="top" secondItem="zCM-Fl-AwB" secondAttribute="top" constant="12" id="5C9-z0-Jvl"/>
+                            <constraint firstAttribute="trailing" secondItem="fOV-di-7Ob" secondAttribute="trailing" id="Dtm-th-OOn"/>
+                            <constraint firstAttribute="bottom" secondItem="6L1-iP-VcC" secondAttribute="bottom" constant="12" id="XGa-Ri-BpE"/>
+                            <constraint firstItem="fOV-di-7Ob" firstAttribute="leading" secondItem="zCM-Fl-AwB" secondAttribute="leading" id="ZLc-IV-FMo"/>
+                            <constraint firstItem="6L1-iP-VcC" firstAttribute="leading" secondItem="zCM-Fl-AwB" secondAttribute="leading" constant="12" id="ct2-pL-h4J"/>
+                            <constraint firstAttribute="trailing" secondItem="6L1-iP-VcC" secondAttribute="trailing" constant="12" id="r0B-VD-cnG"/>
+                            <constraint firstItem="fOV-di-7Ob" firstAttribute="top" secondItem="zCM-Fl-AwB" secondAttribute="top" id="yEy-NV-DKk"/>
+                            <constraint firstAttribute="bottom" secondItem="fOV-di-7Ob" secondAttribute="bottom" id="zGT-1p-X1V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zCM-Fl-AwB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1yu-6y-oOA"/>
+                <constraint firstAttribute="bottom" secondItem="zCM-Fl-AwB" secondAttribute="bottom" id="9HH-kb-w99"/>
+                <constraint firstAttribute="trailing" secondItem="zCM-Fl-AwB" secondAttribute="trailing" id="EVM-HL-ZxO"/>
+                <constraint firstAttribute="trailing" secondItem="zCM-Fl-AwB" secondAttribute="trailing" id="Qf2-iy-mQp"/>
+                <constraint firstItem="zCM-Fl-AwB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VOI-Hj-Mjp"/>
+                <constraint firstItem="zCM-Fl-AwB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vrr-dp-0Mi"/>
+                <constraint firstAttribute="bottom" secondItem="zCM-Fl-AwB" secondAttribute="bottom" id="Y6V-4f-X4J"/>
+                <constraint firstItem="zCM-Fl-AwB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rdm-ft-2LQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="103" height="61"/>
+            <connections>
+                <outlet property="backImage" destination="fOV-di-7Ob" id="aus-YR-Bv7"/>
+                <outlet property="contentLabel" destination="0Rx-3q-S77" id="U9x-AT-aYz"/>
+                <outlet property="dateLabel" destination="VPO-Gb-MfE" id="VJ8-uh-TpC"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="152.47376311844079"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="border-bottom-right" width="87" height="55"/>
+    </resources>
+</document>

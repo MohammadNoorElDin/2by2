@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coachLangTableViewCell" id="KGk-i7-Jjw" customClass="coachLangTableViewCell" customModule="_By2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-2a-iej">
+                        <rect key="frame" x="0.0" y="8" width="320" height="27.5"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8x-Ye-3Ww">
+                                <rect key="frame" x="320" y="0.0" width="0.0" height="22"/>
+                                <state key="normal" title=" Button" image="un-check-box">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0aV-4g-Y77"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTS-Lg-Uju">
+                                <rect key="frame" x="320" y="0.0" width="0.0" height="22"/>
+                                <state key="normal" title=" Button" image="un-check-box">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="djT-Tc-6fC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FRX-2a-iej" secondAttribute="bottom" constant="8" id="0C8-Ve-kgP"/>
+                    <constraint firstItem="FRX-2a-iej" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9H2-wG-JYt"/>
+                    <constraint firstAttribute="trailing" secondItem="FRX-2a-iej" secondAttribute="trailing" id="VVd-iT-fg9"/>
+                    <constraint firstItem="FRX-2a-iej" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gmD-5Y-vtS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftButton" destination="n8x-Ye-3Ww" id="FaT-Ft-hu7"/>
+                <outlet property="rightButton" destination="aTS-Lg-Uju" id="F0j-PK-gxJ"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="-15"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="un-check-box" width="16" height="16"/>
+    </resources>
+</document>

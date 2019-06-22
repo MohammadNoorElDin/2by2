@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa-Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RightChooseProgramTableViewCell" id="KGk-i7-Jjw" customClass="RightChooseProgramTableViewCell" customModule="trainee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat Killer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-11-Lzw">
+                        <rect key="frame" x="16" y="40.5" width="150" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="24"/>
+                        <color key="textColor" red="0.63827115300000004" green="0.18456986550000001" blue="0.10962555559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-kW-UDH" customClass="customDesignableView" customModule="trainee" customModuleProvider="target">
+                        <rect key="frame" x="174" y="16.5" width="130" height="130"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-x2-WGD" customClass="customDesignableIMage" customModule="trainee" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1b1-x2-WGD" firstAttribute="leading" secondItem="6IR-kW-UDH" secondAttribute="leading" id="7xN-zJ-UhG"/>
+                            <constraint firstItem="1b1-x2-WGD" firstAttribute="top" secondItem="6IR-kW-UDH" secondAttribute="top" id="NZF-bI-Eq9"/>
+                            <constraint firstAttribute="width" constant="130" id="h1v-9d-cFK"/>
+                            <constraint firstAttribute="height" constant="130" id="nsa-NN-Pt0"/>
+                            <constraint firstAttribute="trailing" secondItem="1b1-x2-WGD" secondAttribute="trailing" id="o2M-xT-LsD"/>
+                            <constraint firstAttribute="bottom" secondItem="1b1-x2-WGD" secondAttribute="bottom" id="yO0-SU-ZbD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="65"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowSize">
+                                <real key="value" value="0.51000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label - kamal - Label - kamal - Label - kamal" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-7N-NiC">
+                        <rect key="frame" x="8" y="68.5" width="158" height="59.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6IR-kW-UDH" secondAttribute="bottom" constant="16" id="1eV-NE-cJ8"/>
+                    <constraint firstItem="IG1-7N-NiC" firstAttribute="top" secondItem="bCg-11-Lzw" secondAttribute="bottom" constant="4" id="Lag-ly-Y7m"/>
+                    <constraint firstItem="6IR-kW-UDH" firstAttribute="leading" secondItem="bCg-11-Lzw" secondAttribute="trailing" constant="8" id="Rhc-Sd-sxJ"/>
+                    <constraint firstItem="6IR-kW-UDH" firstAttribute="leading" secondItem="bCg-11-Lzw" secondAttribute="trailing" constant="8" id="SYb-6K-ePx"/>
+                    <constraint firstItem="bCg-11-Lzw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dQZ-yu-pyp"/>
+                    <constraint firstItem="6IR-kW-UDH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="h6A-Ry-CEk"/>
+                    <constraint firstItem="IG1-7N-NiC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="m32-2t-mUJ"/>
+                    <constraint firstItem="bCg-11-Lzw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="pUK-KJ-vhh"/>
+                    <constraint firstAttribute="trailing" secondItem="6IR-kW-UDH" secondAttribute="trailing" constant="16" id="ub3-ED-dvr"/>
+                    <constraint firstItem="bCg-11-Lzw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ycd-z9-awe"/>
+                    <constraint firstItem="6IR-kW-UDH" firstAttribute="leading" secondItem="IG1-7N-NiC" secondAttribute="trailing" constant="8" id="zqO-CK-ATw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="first" destination="IG1-7N-NiC" id="ul7-xP-Ulf"/>
+                <outlet property="rightImage" destination="1b1-x2-WGD" id="aEM-iD-cSc"/>
+                <outlet property="title" destination="bCg-11-Lzw" id="yhh-ww-Zrl"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back" width="1080" height="1920"/>
+    </resources>
+</document>
